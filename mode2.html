@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+            background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        }
+        .login-wrapper {
+            background-color: #fff;
+            width: 358px;
+            height: 588px;
+            border-radius: 15px;
+            padding: 0 50px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .header {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .input-item {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128, 125, 125);
+            font-size: 15px;
+            outline: none;
+        }
+        .input-item:placeholder {
+            text-transform: uppercase;
+        }
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px;
+            background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+            color: #fff;
+        }
+        .msg {
+            text-align: center;
+            line-height: 88px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #abc1ee;
+        }
+        #footer {
+				width: 100%;
+				color: #b6bac3;
+				font-size: 12px;
+				text-align: center;
+				padding-bottom: 10px;
+		}
+    </style>
+</head>
+<body>
+    <noscript>你的浏览器没有启用 JavaScript ，无法为您加载网页</noscript>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">Login</div><!--这里可以改成产品名字-->
+            <div class="form-wrapper">
+                <input type="text" name="username" placeholder="username" class="input-item">
+                <input type="password" name="password" placeholder="password" class="input-item">
+                <div class="btn">Login</div><!--预留登录接口-->
+            </div>
+            <div class="msg">
+                Don't have account?
+                <a href="#">Sign up</a><!--预留注册界面-->
+            </div>
+        </div>   
+    </div>
+    <div id="footer">
+        <div xmlns="http://www.w3.org/1999/xhtml">©2022 Polyv <div href="" style="display: inline-block;">商务合作
+            </div> | <a href="https://www.polyv.net/help/protocol/2013/0726/99.html" target="_blank">服务协议</a> | <a
+                href="https://wwwimg.polyv.net/policy/" target="_blank">版权声明</a> | <a
+                href="https://www.polyv.net/download/" target="_blank">版本更新</a> | <a
+                href="https://www.polyv.net/help/" target="_blank">帮助中心</a> | <a
+                href="https://polyv.mike-x.com/rT9kK8" target="_blank">提供建议</a> 
+            </div>
+    </div>
+    <!--自动切换背景图片，看需求取舍<script>
+			function auto_change_picture() {
+				var l = ["1", "2", "3", "4"];
+				for (var i = 0; i < l.length; i++) {
+					if (document.getElementById("bg" + l[i]).style.display == "block") {
+						document.getElementById("bg" + l[i]).style.display = "none";
+						document.getElementById("banner" + l[i]).style.display = "none";
+						if (i + 1 >= l.length) {
+							j = 0;
+						} else {
+							j = i + 1;
+						}
+						document.getElementById("bg" + l[j]).style.display = "block";
+						document.getElementById("banner" + l[j]).style.display = "block";
+						break;
+					}
+				}
+			}
+			setInterval(auto_change_picture, 6000);
+		</script>-->
+</body>
+</html>
